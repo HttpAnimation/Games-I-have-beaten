@@ -35,10 +35,11 @@
 
         button {
             display: flex;
+            flex-direction: column; /* To stack the icon and subtext */
             align-items: center;
             justify-content: center;
             width: 100px;
-            height: 100px;
+            height: 120px; /* Increased height to accommodate subtext */
             background-color: #444;
             border: none;
             border-radius: 10px;
@@ -47,7 +48,12 @@
 
         button img {
             max-width: 80%;
-            max-height: 80%;
+            max-height: 60%; /* Adjusted the max-height for the icon */
+        }
+
+        button span { /* Added a style for the subtext */
+            font-size: 14px;
+            margin-top: 10px;
         }
 
         button:hover img {
@@ -83,21 +89,41 @@
         <h1>HttpAnimations</h1>
     </header>
     <main>
-        <h2>DanTDM Tycoon (2023)</h2><br>
-        <div class="button-container"><a href="https://www.roblox.com/games/431824593/DanTDM-Tycoon" target="_blank"><button><img src="1.png" alt="Game-icon"></button></a></div>
-        <br>
+        <div class="button-container">
+            <a href="https://www.roblox.com/games/431824593/DanTDM-Tycoon" target="_blank">
+                <button>
+                    <img src="1.png" alt="Game-icon">
+                    <span>DanTDM Tycoon (2023)</span>
+                </button>
+            </a>
+        </div>
 
-        <h2>EdgeWorks (2023)</h2>
-        <div class="button-container"><a href="https://www.roblox.com/games/4545054277/VR-Exclusive-EdgeWorks" target="_blank"><button><img src="2.png" alt="Game-icon"></button></a></div>
-        <br>
+        <div class="button-container">
+            <a href="https://www.roblox.com/games/4545054277/VR-Exclusive-EdgeWorks" target="_blank">
+                <button>
+                    <img src="2.png" alt="Game-icon">
+                    <span>EdgeWorks (2023)</span>
+                </button>
+            </a>
+        </div>
 
-        <h2>The Backrooms VR : Escape (2023)</h2>
-        <div class="button-container"><a href="https://www.roblox.com/games/9415887955/OCULUS-The-Backrooms-VR-Escape" target="_blank"><button><img src="3.png" alt="Game-icon"></button></a></div>
-        <br>
+        <div class="button-container">
+            <a href="https://www.roblox.com/games/9415887955/OCULUS-The-Backrooms-VR-Escape" target="_blank">
+                <button>
+                    <img src="3.png" alt="Game-icon">
+                    <span>The Backrooms VR : Escape (2023)</span>
+                </button>
+            </a>
+        </div>
 
-        <h2>Youtuber Tycoon</h2>
-        <div class="button-container"><a href="https://www.roblox.com/games/5103952630/Youtuber-Tycoon" target="_blank"><button><img src="4.png" alt="Game-icon"></button></a></div>
-        <br>
+        <div class="button-container">
+            <a href="https://www.roblox.com/games/5103952630/Youtuber-Tycoon" target="_blank">
+                <button>
+                    <img src="4.png" alt="Game-icon">
+                    <span>Youtuber Tycoon</span>
+                </button>
+            </a>
+        </div>
     </main>
 </body>
 </html>
